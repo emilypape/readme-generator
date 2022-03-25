@@ -16,6 +16,18 @@ const questions = inquirer.prompt([
                 console.log('Please enter your project title!')
             }
         }
+    },
+    {
+        type: 'input',
+        name: 'project description',
+        message: 'Please provide a brief description of your project',
+        validate: nameInput => {
+            if(nameInput) {
+                return true;
+            } else {
+                console.log('A project description is required!')
+            }
+        }
     }
 ])
 
