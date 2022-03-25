@@ -19,13 +19,38 @@ const questions = inquirer.prompt([
     },
     {
         type: 'input',
-        name: 'project description',
+        name: 'Project Description',
         message: 'Please provide a brief description of your project',
         validate: nameInput => {
             if(nameInput) {
                 return true;
             } else {
                 console.log('A project description is required!')
+            }
+        }
+    },
+    {
+        type: 'input',
+        name: 'Installation',
+        message: 'How do you install your app?',
+        validate: nameInput => {
+            if(nameInput) {
+                return true;
+            } else {
+                console.log('Please provide installation instructions!')
+            }
+        }
+
+    },
+    {
+        type: 'input',
+        name: 'Usage',
+        message: 'How do you use your app?'
+        validate: nameInput => {
+            if(nameInput) {
+                return true;
+            } else {
+                console.log('Let the user know how your app works!')
             }
         }
     }
