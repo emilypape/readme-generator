@@ -45,7 +45,7 @@ const questions = inquirer.prompt([
     {
         type: 'input',
         name: 'Usage',
-        message: 'How do you use your app?'
+        message: 'How do you use your app?',
         validate: nameInput => {
             if(nameInput) {
                 return true;
@@ -53,6 +53,34 @@ const questions = inquirer.prompt([
                 console.log('Let the user know how your app works!')
             }
         }
+    },
+    {
+        type: 'list',
+        name: 'Licenses',
+        message: 'What license was used for this project?',
+        choices: ['Public domain', 'Apache', 'BSD', 'GNU', 'GPL', 'N/A'],
+        validate: valueInput => {
+            if(valueInput) {
+                return true;
+            } else {
+                console.log('Please select a licensing option, if no licenses were used select "N/A".')
+            }
+        }
+    },
+    {
+        type: 'input',
+        name: 'Contributing',
+        message: 'Please provide instructions on how to contribute to this project!',
+        validate: nameInput => {
+            if(nameInput) {
+                return true;
+            } else {
+                console.log('Help grow your project! Please provide contribution instructions!')
+            }
+        }
+    },
+    {
+        
     }
 ])
 
