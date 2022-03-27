@@ -80,7 +80,41 @@ const questions = inquirer.prompt([
         }
     },
     {
-        
+        type: 'confirm',
+        name: 'Tests',
+        message: 'Does your program include any tests?',
+        choices: ['Yes', 'No'],
+        validate: nameInput => {
+            if(nameInput) {
+                return true;
+            } else {
+                console.log('Let us know if your program contains tests!');
+            }
+        }
+    },
+    {
+        type: 'input',
+        name: 'Questions',
+        message: 'What is your github username?',
+        validate: nameInput => {
+            if(nameInput) {
+                return true;
+            } else {
+                console.log('Please include your github username!');
+            }
+        }
+    },
+    {
+        type: 'input',
+        name: 'Questions',
+        message: 'What email can you be reached at?',
+        validate: nameInput => {
+            if(nameInput) {
+                return true;
+            } else {
+                console.log('Please include a valid email address!')
+            }
+        }
     }
 ])
 
