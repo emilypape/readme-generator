@@ -4,10 +4,10 @@ const inquirer = require('inquirer');
 const generateMarkdown = require('./utils/generateMarkdown');
 
 // TODO: Create an array of questions for user input
-const questions = inquirer.prompt([
+inquirer.prompt([
     {
         type: 'input',
-        name: 'project name',
+        name: 'title',
         message: 'What is the title of your project?',
         validate: nameInput => {
             if(nameInput) {
@@ -19,7 +19,7 @@ const questions = inquirer.prompt([
     },
     {
         type: 'input',
-        name: 'Project Description',
+        name: 'description',
         message: 'Please provide a brief description of your project',
         validate: nameInput => {
             if(nameInput) {
@@ -31,7 +31,7 @@ const questions = inquirer.prompt([
     },
     {
         type: 'input',
-        name: 'Installation',
+        name: 'installation',
         message: 'How do you install your app?',
         validate: nameInput => {
             if(nameInput) {
@@ -44,7 +44,7 @@ const questions = inquirer.prompt([
     },
     {
         type: 'input',
-        name: 'Usage',
+        name: 'usage',
         message: 'How do you use your app?',
         validate: nameInput => {
             if(nameInput) {
@@ -56,9 +56,9 @@ const questions = inquirer.prompt([
     },
     {
         type: 'list',
-        name: 'Licenses',
+        name: 'license',
         message: 'What license was used for this project?',
-        choices: ['Public domain', 'Apache', 'BSD', 'GNU', 'GPL', 'N/A'],
+        choices: ['Apache', 'BSD', 'Boost'],
         validate: valueInput => {
             if(valueInput) {
                 return true;
@@ -69,7 +69,7 @@ const questions = inquirer.prompt([
     },
     {
         type: 'input',
-        name: 'Contributing',
+        name: 'contributing',
         message: 'Please provide instructions on how to contribute to this project!',
         validate: nameInput => {
             if(nameInput) {
@@ -81,7 +81,7 @@ const questions = inquirer.prompt([
     },
     {
         type: 'confirm',
-        name: 'Tests',
+        name: 'tests',
         message: 'Does your program include any tests?',
         choices: ['Yes', 'No'],
         validate: nameInput => {
@@ -94,7 +94,7 @@ const questions = inquirer.prompt([
     },
     {
         type: 'input',
-        name: 'Questions',
+        name: 'github',
         message: 'What is your github username?',
         validate: nameInput => {
             if(nameInput) {
@@ -106,7 +106,7 @@ const questions = inquirer.prompt([
     },
     {
         type: 'input',
-        name: 'Questions',
+        name: 'questions',
         message: 'What email can you be reached at?',
         validate: nameInput => {
             if(nameInput) {
@@ -116,13 +116,28 @@ const questions = inquirer.prompt([
             }
         }
     }
-])
+]).then((input) => {
+    //logic for buildin md
+    // logic for writing to file
+    // logic for anything that comes after input
+    // TODO: Create a function to write README file
+    function writeToFile(fileName, data) {
+        fs.writeFile(`./${fileName}.md`, data, (err) => {
+            if(err){
+                console.log(err);
+            }
+            console.log('Your ReadMe has been generated, check out index.html for more information!');
+        });
+    };    
+    // TODO: Create a function to initialize app
+    function init() {
+        const generateReadMe = generateMarkdown(input)
+        var fileName = 'myGeneratedReadMe'
+    
+        writeToFile(fileName, generateReadMe)
+    }
+    
+    // Function call to initialize app
+    init();
+})
 
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
-
-// TODO: Create a function to initialize app
-function init() {}
-
-// Function call to initialize app
-init();
