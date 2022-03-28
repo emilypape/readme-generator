@@ -1,29 +1,29 @@
 # parkscape
 
 
-  ## Apache
-  ![Apache](https://img.shields.io/badge/License-Apache_2.0-blue.svg)
-  ![Apache](https://opensource.org/licenses/Apache-2.0)
+  ## 
+  ![Boost](https://img.shields.io/badge/License-Apache_2.0-blue.svg)
+  ![Boost](https://www.boost.org/LICENSE_1_0.txt)
   
 
-#Table of Contents [object Object]
+#Table of Contents undefined
 
 ## Description 
-### parks app for short notice trips to national parks
+### parks app
 
 ## Insallation
-### download on github
+### go to github
 
 ## Usage
-### enter park name and travel dates
+### add a park name and travel dates
 
 ## Contributing
-### clone repository from github
+### clone github repo
 
 ## Tests
-### false
+### Were tests used in this application? false
 
 ## Questions
-### emilypape
-### eap6787@gmail.com
+### Github: emilypape
+### Email: eap6787@gmail.com
 

@@ -8,7 +8,7 @@ function renderLicenseBadge(license) {
   } else if (license === 'BSD') {
     return `![${license}](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)`
   } else if (license === 'Boost') {
-    return `![${license}](https://img.shields.io/badge/License-Apache_2.0-blue.svg)`
+    return `![${license}](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg))`
   }
   return license;
 };
@@ -32,7 +32,7 @@ function renderLicenseLink(license) {
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
   return`
-  ## ${license}
+  ## 
   ${renderLicenseBadge(license)}
   ${renderLicenseLink(license)}
   `
@@ -59,11 +59,11 @@ ${renderLicenseSection(data.license)}
 ### ${data.contributing}
 
 ## Tests
-### ${data.tests}
+### Were tests used in this application? ${data.tests}
 
 ## Questions
-### ${data.github}
-### ${data.questions}
+### Github: ${data.github}
+### Email: ${data.questions}
 
 `;
 }
