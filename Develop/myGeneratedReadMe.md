@@ -21,12 +21,12 @@ Table of Contents
 <a id= 'Description'></a>
 ## Description :
 
-### lets try this one more time
+### ParkScape is a national park trip planning app for short notice trips
 -----------------------
 
 <a id= 'Installation'></a>
 ## Insallation :
-### idek
+### Free installation is available on github under user: emilypape
 ------------------------
 
 <a id= 'License'></a>
@@ -40,15 +40,15 @@ Table of Contents
 
 <a id= 'Usage'></a>
 ## Usage :
-### send help
+### ParkScape accepets a national park name and travel dates, it then presents the user with that park and weather information
 ------------------
 
 <a id= 'Contributing'></a>
 ## Contributing :
-### plz dont
+### If you would like to contribute to parkscape please clone the repository from user emilypape
 -------------------------
 
-<a id= 'Tests'</a>
+<a id= 'Tests'></a>
 ## Tests :
 ### Were tests used in this application? false
 ------------------------------------------------------- 

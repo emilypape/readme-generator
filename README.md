@@ -1,3 +1,7 @@
 # Professional README Generator Starter Code
 
-[How to create a Professional README](https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide)
+This application take user input and creates a professional ReadMe file with the information it collect
+
+repo: https://github.com/emilypape
+demo video: https://youtu.be/Axr4cU4JEpY
+
