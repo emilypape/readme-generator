@@ -18,18 +18,18 @@ Table of Contents
 
 
 
-<a id= 'Description'><a>
+<a id= 'Description'></a>
 ## Description :
 
-### ye
+### lets try this one more time
 -----------------------
 
-<a id= 'Installation'><a>
+<a id= 'Installation'></a>
 ## Insallation :
-### tes
+### idek
 ------------------------
 
-<a id= 'License'><a>
+<a id= 'License'></a>
 ## Licensing :
 ### Licensing through 
   ## 
@@ -38,24 +38,24 @@ Table of Contents
   
 ------------------------
 
-<a id= 'Usage'><a>
+<a id= 'Usage'></a>
 ## Usage :
-### tes
+### send help
 ------------------
 
-<a id= 'Contributing'><a>
+<a id= 'Contributing'></a>
 ## Contributing :
-### tse
+### plz dont
 -------------------------
 
-<a id= 'Tests'><a>
+<a id= 'Tests'</a>
 ## Tests :
 ### Were tests used in this application? false
 ------------------------------------------------------- 
 
-<a id= 'Questions'><a>
+<a id= 'Questions'></a>
 ## Questions :
-### Github: [tes](https://github.com/tes)
-### Email: tes
+### Github: [emilypape](https://github.com/emilypape)
+### Email: eap6787@gmail.com
 -----------------------------
 

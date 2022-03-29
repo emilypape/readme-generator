@@ -56,38 +56,38 @@ Table of Contents
 
 
 
-<a id= 'Description'><a>
+<a id= 'Description'></a>
 ## Description :
 
 ### ${data.description}
 -----------------------
 
-<a id= 'Installation'><a>
+<a id= 'Installation'></a>
 ## Insallation :
 ### ${data.installation}
 ------------------------
 
-<a id= 'License'><a>
+<a id= 'License'></a>
 ## Licensing :
 ### Licensing through ${renderLicenseSection(data.license)}
 ------------------------
 
-<a id= 'Usage'><a>
+<a id= 'Usage'></a>
 ## Usage :
 ### ${data.usage}
 ------------------
 
-<a id= 'Contributing'><a>
+<a id= 'Contributing'></a>
 ## Contributing :
 ### ${data.contributing}
 -------------------------
 
-<a id= 'Tests'><a>
+<a id= 'Tests'></a>
 ## Tests :
 ### Were tests used in this application? ${data.tests}
 ------------------------------------------------------- 
 
-<a id= 'Questions'><a>
+<a id= 'Questions'></a>
 ## Questions :
 ### Github: [${data.github}](https://github.com/${data.github})
 ### Email: ${data.questions}
