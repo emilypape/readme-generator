@@ -128,16 +128,10 @@ inquirer.prompt([
             }
             console.log('Your ReadMe has been generated, check out index.html for more information!');
         });
-        // fs.appendFile(`./${fileName}.md`, renderLicenseSection(), (err) => {
-        //     if(err){
-        //         console.log(err);
-        //     }
-        //     console.log('Your license section has been added');
-        // })
+        
     };    
     // TODO: Create a function to initialize app
     function init() {
-        // const generateLicense = renderLicenseSection(input.license)
         const generateReadMe = generateMarkdown(input)
         var fileName = 'myGeneratedReadMe'
     

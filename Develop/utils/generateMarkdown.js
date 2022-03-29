@@ -8,7 +8,7 @@ function renderLicenseBadge(license) {
   } else if (license === 'BSD') {
     return `![${license}](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)`
   } else if (license === 'Boost') {
-    return `![${license}](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg))`
+    return `![${license}](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)`
   }
   return license;
 };
@@ -40,30 +40,58 @@ function renderLicenseSection(license) {
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  return `# ${data.title}
+  return `# ${data.title} 
+  ${renderLicenseSection(data.license)}
 
-${renderLicenseSection(data.license)}
+Table of Contents
+---------------------------------
+## [Description](#Description)
+## [Installation](#Installation)
+## [Licensing](#License)
+## [Usage](#Usage)
+## [Contributing](#Contributing)
+## [Tests](#Tests)
+## [Questions](#Questions)
+----------------------------------
 
-#Table of Contents ${data}
 
-## Description 
+
+<a id= 'Description'><a>
+## Description :
+
 ### ${data.description}
+-----------------------
 
-## Insallation
+<a id= 'Installation'><a>
+## Insallation :
 ### ${data.installation}
+------------------------
 
-## Usage
+<a id= 'License'><a>
+## Licensing :
+### Licensing through ${renderLicenseSection(data.license)}
+------------------------
+
+<a id= 'Usage'><a>
+## Usage :
 ### ${data.usage}
+------------------
 
-## Contributing
+<a id= 'Contributing'><a>
+## Contributing :
 ### ${data.contributing}
+-------------------------
 
-## Tests
+<a id= 'Tests'><a>
+## Tests :
 ### Were tests used in this application? ${data.tests}
+------------------------------------------------------- 
 
-## Questions
-### Github: ${data.github}
+<a id= 'Questions'><a>
+## Questions :
+### Github: [${data.github}](https://github.com/${data.github})
 ### Email: ${data.questions}
+-----------------------------
 
 `;
 }
